@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;  
+
+.bg-custom-gradient{
+  background:linear-gradient(90deg,#e4cbcb, #ecfab0);
+  color: rgb(18, 19, 19);
+}
+.container{
+  background: linear-gradient(90deg, #f6c660, #f29ffc);
+}
+.image{
+  background-image: url('./image/l2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.color{
+ background-color: rgb(164, 132, 172)
+}
+
+/* Define keyframes for the scrolling animation */
+/* @keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -200%;
+  }
+}
+
+/* Apply the animation to the container */
+/*.scroll-container {
+  height: 100vh; /* Full viewport height */
+ /* background: url('') repeat-y; /* Use a vertical scrolling image 
+  background-size: cover;
+  animation: scroll 10s linear infinite; /* Animation settings 
+} */
+

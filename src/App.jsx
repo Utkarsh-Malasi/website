@@ -1,11 +1,11 @@
 import React, { useRef } from 'react'
-import Header from './header'
+import Header from './Header'
 import './index.css'
 import Vision from './Vision'
 import Home from './Home'
-import Services from './services'
-import Contact from './contact'
-import Faq from './faq'
+import Services from './Services'
+import Contact from './Contact'
+import Faq from './Faq'
 import { use } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

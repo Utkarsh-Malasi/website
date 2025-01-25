@@ -1,4 +1,3 @@
-import Header from "./header";
 import React, { forwardRef } from "react";
 const Vision = forwardRef((props, ref) => {
   return (

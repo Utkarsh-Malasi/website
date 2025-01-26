@@ -1,2 +1,30 @@
-# Auto detect text files and perform LF normalization
+# Handle line endings automatically for text files
 * text=auto
+
+# Set default behavior to automatically normalize line endings for all files
+* text=auto eol=lf
+
+# Mark JavaScript and JSX files as text to handle line endings
+*.js text
+*.jsx text
+
+# Mark HTML files as text
+*.html text
+
+# Mark CSS files as text
+*.css text
+
+# Custom settings for specific languages or tools
+*.md linguist-documentation
+*.json linguist-language=JSON
+*.yml linguist-language=YAML
+
+# Exclude large binary files from diff and merge
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip -diff -merge
+*.tar.gz -diff -merge
+
+# Customize merge behavior for specific files
+*.lock merge=union

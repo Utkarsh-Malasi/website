@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-const Vision = forwardRef((props, ref) => {
+const Vision = forwardRef((props,ref) => {
   return (
     <>
       <div className="color p-4 " ref={ref}>

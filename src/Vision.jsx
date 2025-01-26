@@ -5,7 +5,6 @@ const Vision = forwardRef((props,ref) => {
       <div className="color p-4 " ref={ref}>
         <div className="text-7xl font-serif font-bold text-slate-900 mb-9">
           Our Vision And Mission
-          {props.children}
         </div>
         <div className="text-2xl font-sans font-semibold leading-relaxed">
           At the heart of our philosophy is the belief in kindness—both towards
@@ -35,4 +34,5 @@ const Vision = forwardRef((props,ref) => {
     </>
   );
 });
+Vision.displayName = "Vision";
 export default Vision;

@@ -8,7 +8,6 @@ const Home =forwardRef((props, ref)=> {
       
     <div className="color" ref={ref}>
 < div className=" h-[600px] w-full image">
-{props.children}
       </div>
     {/* <h1 className="text-6xl font-extrabold  rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 m-4 w-[40%] p-10">ABOUT OUR TEAM</h1>
       <p className="text-2xl font-sans font-semibold leading-relaxed bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 w-[100%] p-10">
@@ -28,5 +27,6 @@ const Home =forwardRef((props, ref)=> {
     </>
   );
 });
+Home.displayName = 'Home';
 
 export default Home;

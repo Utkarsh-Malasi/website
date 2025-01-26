@@ -1,8 +1,5 @@
 import React, { forwardRef } from "react";
-import Header from "./header";
-import l2 from "./image/l2.png";
 import "./index.css";
-import { useNavigate } from 'react-router-dom';
 const Home =forwardRef((props, ref)=> {
   return (
     <>

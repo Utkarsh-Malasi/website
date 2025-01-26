@@ -1,13 +1,11 @@
 import React, { useRef } from 'react'
-import Header from './header'
+import Header from './Header.jsx'
 import './index.css'
-import Vision from './vision'
-import Home from './home'
-import Services from './services'
-import Contact from './contact'
-import Faq from './faq'
-import { use } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Vision from './Vision.jsx'
+import Home from './Home.jsx'
+import Services from './Services.jsx'
+import Contact from './Contact.jsx'
+import Faq from './Faq.jsx'
 
 function App() {
   const visionRef = useRef(null);

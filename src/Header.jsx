@@ -1,8 +1,5 @@
 import React from "react";
 import './index.css'
-import logo from "/src/image/logo.png";
-import l2 from "/src/image/l2.png";
-
 const Header = ({scrollToVision, scrollToContact, scrollToServices, scrollToFaq, scrollToHome } ) => {
   const scrollToHead = () => {
     window.scrollTo({

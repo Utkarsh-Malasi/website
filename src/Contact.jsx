@@ -4,6 +4,7 @@ const Contact = forwardRef((props, ref) => {
   return (
     <>
         <div className='color h-[600px]  pt-14 'ref={ref}>
+        {props.children}
             <h1 className='text-8xl p-10 font-bold font-serif'>CONTACT</h1>
         <h1 className='text-5xl font-bold p-8'>Contact Number: 8279793224</h1>
         <h1 className='text-5xl font-bold p-8'>Email: 5V9gW@example.com</h1>

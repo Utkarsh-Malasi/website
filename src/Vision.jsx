@@ -2,11 +2,11 @@ import React, { forwardRef } from "react";
 const Vision = forwardRef((props,ref) => {
   return (
     <>
-      <div className="color p-4 " ref={ref}>
-        <div className="text-7xl font-serif font-bold text-slate-900 mb-9">
-          Our Vision And Mission
+      <div className=" p-4 " ref={ref}>
+        <div className="sm:text-7xl text-4xl font-serif text-center permanent-font mt-36 bg-teal-600 text-white w-[90%] h-32 pt-6 rounded-md font-bold  mb-9  sm:w-[70%]">
+          Vision And Mission
         </div>
-        <div className="text-2xl font-sans font-semibold leading-relaxed">
+        <div className="text-3xl font-semibold leading-relaxed">
           At the heart of our philosophy is the belief in kindness—both towards
           oneself and others. We emphasize the importance of prioritizing mental
           health, recognizing that this choice is a vital step in creating a
@@ -21,7 +21,7 @@ const Vision = forwardRef((props,ref) => {
           to helping individuals navigate the challenges of mental health with
           empathy and understanding. Together, we can cultivate a more
           compassionate world, where mental health concerns are met with care
-          and respect.  Ennu: Our approach is rooted in kinship
+          and respect. Our approach is rooted in kinship
           theory, where we understand the importance of human relationships in
           fostering mental well-being. We are dedicated to making mental health
           a priority, addressing it with care, wisdom, and professionalism. With

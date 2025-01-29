@@ -28,10 +28,11 @@ function App() {
        scrollToHome={() => scrollToSection(homeRef)}
       />
       <Home ref={homeRef}/>
+       <Faq ref={faqRef}/>
       <Vision ref={visionRef}/>
       <Services ref={servicesRef}/>
       <Contact ref={contactRef}/>
-      <Faq ref={faqRef}/>
+     
     </>
   );
 }

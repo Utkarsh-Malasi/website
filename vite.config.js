@@ -7,6 +7,6 @@ export default defineConfig({
   server: {
     host: true, // Enable serving on all network interfaces
     port: 3000, // Port number to run the dev server
-    allowedHosts: ['*'] // Add your ngrok URL here
+    allowedHosts: ['a6af-103-205-245-189.ngrok-free.app'] // Add your ngrok URL here
   }
 });

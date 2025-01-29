@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import './index.css';
 
+
 const Header = ({scrollToVision, scrollToContact, scrollToServices, scrollToFaq, scrollToHome }) => {
+
+  
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
+    };
   const scrollToHead = () => {
     window.scrollTo({
       top: 0,
@@ -11,18 +19,27 @@ const Header = ({scrollToVision, scrollToContact, scrollToServices, scrollToFaq,
   }
   return (
     <>
-      <div className="flex w-full h-48 justify-between bg-custom-gradient ">
-        <button className="bg-blue-400 hover:bg-gray-800 text-white font-bold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded fixed bottom-4 right-4" onClick={scrollToHead}>Home</button>
-        <div className="w-[20%] h-36 text-5xl m-10 p-3 font-bold from-neutral-950">
+      <div className="flex w-[100%]  h-48 justify-between bg-custom-gradient ">
+        <button className="bg-teal-900 hover:bg-gray-800 text-white font-bold hover:text-white py-2 px-4  border border-black hover:border-transparent rounded fixed bottom-4 right-4" onClick={scrollToHead}>Home</button>
+        <div className={`w-[20%] sm:m-4 h-48  text-5xl m-5 p-3 font-bold permanent-font ${ isOpen ? 'head': 'block'  }`}>
           <h1>ECSTASY QUEST</h1>
         </div>
-        <div className="w-[60%] flex justify-end m-10 p-8 gap-16 font-semibold shadow-md font-mono">
-          <button className="inline-block text-4xl bg-transparent hover:bg-gray-800 text-black font-semibold hover:text-white px-2 hover:border-transparent rounded" onClick={scrollToHome}>Home</button>
-          <button className="inline-block text-4xl bg-transparent hover:bg-gray-800 text-black font-semibold hover:text-white px-2 hover:border-transparent rounded" onClick={scrollToVision}>Vision</button>
-          <button className="inline-block text-4xl bg-transparent hover:bg-gray-800 text-black font-semibold hover:text-white px-2 hover:border-transparent rounded" onClick={scrollToServices}>Services</button>
-          <button className="inline-block text-4xl bg-transparent hover:bg-gray-800 text-black font-semibold hover:text-white px-2 hover:border-transparent rounded" onClick={scrollToContact}>Contact</button>
-          <button className="inline-block text-4xl bg-transparent hover:bg-gray-800 text-black font-semibold hover:text-white px-2 hover:border-transparent rounded" onClick={scrollToFaq}>FAQ</button>
+      
+        <button
+          onClick={toggleMenu}
+      className={`text-white text-2xl block md:hidden m-6 ${ isOpen ? 'menu': 'block'  }`}
+        >
+          &#9776; 
+        </button>
+        <nav className={`${ isOpen ? 'block' : 'hidden' } sm:flex bg-teal-400 h-96 sm:h-44 rounded-md sm:bg-transparent space-y-4`}>
+           <div className=" md:flex-row flex flex-col justify-evenly p-4 gap-10 w-full  font-bold shadow-sm font-sherif">
+          <button className="inline-block text-2xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToHome}>Home</button>
+          <button className="inline-block text-2xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToFaq}>About Us</button>
+          <button className="inline-block text-2xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToVision}>Vision</button>
+          <button className="inline-block text-2xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToServices}>Services</button>
+          <button className="inline-block text-2xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToContact}>Contact</button>
         </div>
+        </nav>
       </div>
     </>
   );

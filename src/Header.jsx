@@ -19,9 +19,9 @@ const Header = ({scrollToVision, scrollToContact, scrollToServices, scrollToFaq,
   }
   return (
     <>
-      <div className="flex w-[100%]  h-48 justify-between bg-custom-gradient ">
+      <div className="flex w-[100%] sm:w-[100%]  h-32 justify-between bg-custom-gradient ">
         <button className="bg-teal-900 hover:bg-gray-800 text-white font-bold hover:text-white py-2 px-4  border border-black hover:border-transparent rounded fixed bottom-4 right-4" onClick={scrollToHead}>Home</button>
-        <div className={`w-[20%] sm:m-4 h-48  text-5xl m-5 p-3 font-bold permanent-font ${ isOpen ? 'head': 'block'  }`}>
+        <div className={`w-[20%] md:m-4 h-32 text-5xl m-5  font-bold permanent-font ${ isOpen ? 'head': 'block'  }`}>
           <h1>ECSTASY QUEST</h1>
         </div>
       
@@ -31,13 +31,13 @@ const Header = ({scrollToVision, scrollToContact, scrollToServices, scrollToFaq,
         >
           &#9776; 
         </button>
-        <nav className={`${ isOpen ? 'block' : 'hidden' } sm:flex bg-teal-400 h-96 sm:h-44 rounded-md sm:bg-transparent space-y-4`}>
-           <div className=" md:flex-row flex flex-col justify-evenly p-4 gap-10 w-full  font-bold shadow-sm font-sherif">
-          <button className="inline-block text-2xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToHome}>Home</button>
-          <button className="inline-block text-2xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToFaq}>About Us</button>
-          <button className="inline-block text-2xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToVision}>Vision</button>
-          <button className="inline-block text-2xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToServices}>Services</button>
-          <button className="inline-block text-2xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToContact}>Contact</button>
+        <nav className={`${ isOpen ? 'block' : 'hidden' } md:flex bg-teal-400 h-96 md:h-32 p-1 rounded-md md:bg-transparent space-y-4`}>
+           <div className=" md:flex-row flex flex-col justify-evenly gap-10 w-full  font-bold shadow-sm font-sherif">
+          <button className="inline-block text-xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToHome}>Home</button>
+          <button className="inline-block text-xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToFaq}>About Us</button>
+          <button className="inline-block text-xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToVision}>Vision</button>
+          <button className="inline-block text-xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToServices}>Services</button>
+          <button className="inline-block text-xl bg-transparent hover:bg-gray-900  text-white font-bold hover:text-teal-500 px-2 hover:border-black  rounded-xl font-serif" onClick={scrollToContact}>Contact</button>
         </div>
         </nav>
       </div>

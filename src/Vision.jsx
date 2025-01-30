@@ -6,7 +6,7 @@ const Vision = forwardRef((props,ref) => {
         <div className="sm:text-7xl text-4xl font-serif text-center permanent-font mt-36 bg-teal-600 text-white w-[90%] h-32 pt-6 rounded-md font-bold  mb-9  sm:w-[70%]">
           Vision And Mission
         </div>
-        <div className="text-3xl font-semibold leading-relaxed">
+        <div className="text-2xl font-medium leading-relaxed">
           At the heart of our philosophy is the belief in kindness—both towards
           oneself and others. We emphasize the importance of prioritizing mental
           health, recognizing that this choice is a vital step in creating a

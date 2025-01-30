@@ -5,8 +5,8 @@ const Faq =forwardRef((props,ref) => {
     <>
     <div  ref={ref}>
   
-    <h1 className="text-5xl sm:text-6xl font-extrabold text-center   rounded-lg bg-teal-600 text-white permanent-font m-4  sm:w-[40%] p-10">ABOUT OUR TEAM</h1>
-      <p className="text-3xl  font-semibold leading-relaxed  w-[100%] p-10">
+    <h1 className="text-5xl md:text-6xl font-extrabold text-center   rounded-lg bg-teal-600 text-white permanent-font m-4     md:w-[50%] p-10">ABOUT OUR TEAM</h1>
+      <p className="text-2xl md:text-2xl  font-medium leading-relaxed  w-[100%] p-10">
         Dedicated Counseling Psychologist, Mental health professional and
         Special Educator specializing in comprehensive support for individuals
         with diverse needs, such as autism, ADHD, intellectual disabilities, and
